@@ -1,10 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <P>成功了</P>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="A live blockchain demo in a browser." />
+        <meta name="author" content="Anders Brownworth" />
+        
+        <title>Blockchain Demo</title>
+        
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/stylesheets/lib/bootstrap.min.css" />
+        <link rel="stylesheet" href="/stylesheets/lib/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="/stylesheets/lib/bootstrap-horizon.css" />
+        <link rel="stylesheet" href="/stylesheets/lib/ladda-themeless.min.css" />
+        <link rel="stylesheet" href="/stylesheets/lib/ie10-viewport-bug-workaround.css" />
+        <link rel="stylesheet" href="/stylesheets/blockchain.css" />
+        <link rel="stylesheet" href="/stylesheets/lib/video-js.css" />
+        
+        <script src="/javascripts/lib/jquery.min.js"></script>
+        <script src="/javascripts/lib/bootstrap.min.js"></script>
+        <script src="/javascripts/lib/spin.min.js"></script>
+        <script src="/javascripts/lib/ladda.min.js"></script>
+        <script src="/javascripts/lib/ie10-viewport-bug-workaround.js"></script>
+        <script src="/javascripts/lib/sha256.js"></script>
+        <script src="/javascripts/blockchain.js"></script>
+        <script src="/javascripts/lib/videojs-ie8.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/" class="navbar-brand">区块链示例</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/hash">哈希</a></li>
+                        <li><a href="/block">区块</a></li>
+                        <li><a href="/blockchain">区块链</a></li>
+                        <li><a href="/distributed">分布式</a></li>
+                        <li><a href="/tokens">代币</a></li>
+                        <li><a href="/coinbase">币基</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <a href="https://github.com/anders94/blockchain-demo/">
+            <img src="/images/fork-me-on-github-ribbon.png" alt="Fork me on GitHub" class="github-ribbon" />
+        </a>
+        <div class="container">
+            <h1>Blockchain Demo</h1>
+            <div class="embed-responsive embed-responsive-16by9">
+                <video controls="controls" autoplay="autoplay">
+                    <source src="http://p97ld4l6j.bkt.clouddn.com/Blockchain%20101%20-%20A%20Visual%20Demo.mp4"></source>
+                    <track src="/video/Blockchain 101 - A Visual Demo.vtt" srclang="zh" kind="subtitles" lable="简体中文" default=""></track>
+                </video>
+            </div>
+            <br />
+            <p class="pull-right">by <a href="http://andersbrownworth.com/">Anders Brownworth </a>1K3NvcuZzVTueHW1qhkG2Cm3viRkh2EXJp</p>
+        </div>
+
+        <script src="/javascripts/lib/video.js"></script>
+    </body>
 </html>
